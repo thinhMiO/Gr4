@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product18</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script language="javascript">
+        var qty = document.getElementById('#qty-detail')
+        function updownqty(str){ // tăng giảm số lượng trong landingpage.tpl
+	        var qty = $('#qty-detail').val();
+	        if(str=='down') { qty++; }
+	        if(str=='up') { if(qty>1) { qty--; } }
+	        $('#qty-detail').val(qty);
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__navbar">
+                <div class="header__navbar-khung">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="mailto:A1uniformsshop888@gmail.com" class="header-link header-link--under">
+                                <i class="fa-solid fa-envelope"></i>
+                                A1uniformsshop888@gmail.com
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="tel:+1-800-334-2205" class="header-link">
+                                <i class="fa-solid fa-phone"></i>
+                                1-800-334-2205
+                            </a>
+                        </li>
+                    </ul>
+                                        
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="rating.html"  class="header-link header-link--under">Write a Review</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="signup.html" class="header-link header-link--str header-link--under">Registration</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="signin.html" class="header-link header-link--str">Log in</a>
+                        </li>
+                    </ul>                        
+                </div>                                                                                                                   
+            </div>
+            <!--search-->
+            <div class="header-with-search">
+                <div class="header-ws-khung">
+                    <div class="header__logo">
+                        <a href="" title="A-1 Uniform - High quality uniforms" rel="home">
+                            <img class="header__logo-img" src="images/a1logo.png" alt="A-1 Uniforms">
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-ip--hh">
+                            <input type="text" class="header__search-ip" placeholder="Search for products...">
+                            <!--LS-->
+                            <div class="header__search-history">
+                                <h3>Search History</h3>
+                                <ul class="search-history--list">
+                                    <li class="search-history--item">
+                                        <a href="shirts.html">Shirts</a>
+                                    </li>
+                                    <li class="search-history--item">
+                                        <a href="t-shirts.html">T-shirts</a>
+                                    </li>
+                                    <li class="search-history--item">
+                                        <a href="skirts-frocks.html">Skirts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="search-btn"><i class="search-btn-icon fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <a href="cart.html">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <!-- no cart -->
+                            <div class="header__cart-list">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="header__cart-list-no">
+                                            <img src="images/other/cartlist.png" alt="">
+                                            <span>There are no products in the cart</span>
+                                            <a class="cart-link" href="cart.html">View Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+            <!--menu-->
+            <div class="header__menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="nav-bar">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a href="Home.html" class="header__menu-link">HOME</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="About.html" class="header__menu-link">ABOUTS</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="product.html" class="header__menu-link">PRODUCT</a>
+                                    <!-- product child -->
+                                    <div class="mini-menu">
+                                        <ul class="mini-list">
+                                            <li>By Category</li>
+                                            <li><a href="shirts.html" class="mini-list__link">Shirts</a></li>
+                                            <li><a href="t-shirts.html" class="mini-list__link">T-Shirts</a></li>
+                                            <li><a href="skirts-frocks.html" class="mini-list__link">Skirts-Frocks</a></li>
+                                            <li><a href="track-pants.html" class="mini-list__link">Track-pants</a></li>
+                                            <li><a href="shorts.html" class="mini-list__link">Shorts</a></li>
+                                            <li><a href="tie.html" class="mini-list__link">Tie-Be-socks</a></li>
+                                        </ul>
+                                        <ul class="mini-list">
+                                            <li>By Brand</li>
+                                            <li><a href="red-kap-sp.html" class="mini-list__link">Red Kap</a></li>
+                                            <li><a href="horace-small-sp.html" class="mini-list__link">Horace Small</a></li>
+                                            <li><a href="gildan-sp.html" class="mini-list__link">Gildan</a></li>
+                                        </ul>
+                                        <ul class="mini-list">
+                                            <li>Offers</li>
+                                            <li><a href="sales.html" class="mini-list__link" style="color: crimson">Sales</a></li>
+                                            <li><a href="male.html" class="mini-list__link">Male</a></li>
+                                            <li><a href="female.html" class="mini-list__link">Female</a></li>
+                                        </ul>
+                                    </div>  
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="brand.html" class="header__menu-link">BRANDS</a>
+                                    <!-- brand child -->
+                                    <div class="dropdown2">
+                                        <ul class="dropdown">
+                                            <li class="dropdown-item"><a href="red-kap.html">Red Kap</a></li>
+                                            <li class="dropdown-item"><a href="horace-small.html">Horace Small</a></li>
+                                            <li class="dropdown-item"><a href="gildan.html">Gildan</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="sale-policy.html" class="header__menu-link">SALES POLICY</a>
+                                    <!-- policy child -->
+                                    <ul class="dropdown">
+                                        <li class="dropdown-item"><a href="sale-policy.html">Sales Policy</a></li>
+                                        <li class="dropdown-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                                        <li class="dropdown-item"><a href="return-policy.html">Return Policy</a></li>
+                                        <li class="dropdown-item"><a href="terms-condition.html">Terms & Conditions</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="news.html" class="header__menu-link">NEWS</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="Contact.html" class="header__menu-link">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="product-shop">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-3">
+                        <nav class="category">
+                            <h3><i class="fas fa-list"></i>Category</h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="shirts.html" class="category-link">Shirts</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="t-shirts.html" class="category-link">T-Shirts</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="skirts-frocks.html" class="category-link">Skirts</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="track-pants.html" class="category-link">Track pants</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="shorts.html" class="category-link">Shorts</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="tie.html" class="category-link">Belts</a>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                        <nav class="category">
+                            <h3>Brand</h3>
+                            <ul class="category-list">
+                                <li class="category-item"><a href="red-kap-sp.html" class="category-link">Red Kap</a></li>
+                                <li class="category-item"><a href="horace-small-sp.html" class="category-link">Hocare Small</a></li>
+                                <li class="category-item"><a href="gildan-sp.html" class="category-link">Gildan</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="category">
+                            <h3>Gender</h3>
+                            <ul class="category-list">
+                                <li class="category-item"><a href="male.html" class="category-link">Male</a></li>
+                                <li class="category-item"><a href="female.html" class="category-link">Female</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="cimg">
+                                    <div class="mahang-cimg">
+                                        <span>PLU:</span>
+                                        <strong>mã</strong>
+                                    </div>
+                                    <img src="./images/product/sp18/tube-track.jpg" class="big-img" alt="">
+                                    <div class="block-small-img">
+                                        <ul>
+                                            <li><img src="./images/product/sp18/tube-track.jpg" width="66px" alt=""></li>
+                                        </ul>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="cinfor">
+                                    <h1>Tube Track Pant</h1>
+                                    <p class="textbold">Code: 1005207701</p>
+                                    <p>Type: Track pants</p>
+                                    <p class="textcolor">Cost: 8.57$</p>
+                                    <div id="product">
+                                        <div id="block_mau_size">
+                                            <div>
+                                                <span>Color:</span>
+                                            </div>
+                                            <ul id="block_mau">
+                                                <li><img src="./images/product/sp18/tube-track.jpg" width="66px" alt=""></li>
+                                            </ul>
+                                            <div>
+                                                <span>Size:</span>
+                                            </div>
+                                            <ul id="block_size">
+                                                <li>M</li>
+                                                <li>L</li>
+                                                <li>XL</li>
+                                                <li>XXL</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="quantity">
+                                        <input type="button" value="-" class="downqty ip1" onclick="updownqty('up')"> 
+                                        <input type="text" value="1" class="soluong ip1" id = "qty-detail">
+                                        <input type="button" value="+" class="upqty ip1" onclick="updownqty('down')">
+                                   </div>
+                                    <div class="button-buy">
+                                        <a href="" class="quantity-card">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            <div class="product-tab">
+                                <h4>0 Comments</h4>
+                                <div class="personal-rating">
+                                    <h6>Your Rating</h6>
+                                    <div class="icon-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="leave-rating">
+                                    <h4>Leave A Comments</h4>
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="text" name="" id="" class="rating-ip" placeholder="Your name">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" name="" id="" class="rating-ip" placeholder="Your email">
+                                            </div>
+                                            <div class="col-12">
+                                                <textarea name="" id="" cols="30" rows="10" class="rating-area" placeholder="Your comment"></textarea>
+                                                <div class="rating-check">
+                                                    <input type="checkbox" name="" id="" class="rating-ck">
+                                                    <label for="">Anonymous</label>
+                                                </div>
+                                                <button type="submit" class="rating-btn">Comment</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="related-product">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="related-title">
+                            <h2>Related Product</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a class="product-item" href="productdetail17.html">
+                            <div class="product-item-img">
+                                <img src="./images/product/sp17/track-pant-bold.jpg" width="100%" height="100%" class="product-icon">
+                            </div>
+                            <h4 class="product-item-name">Bold Track Pant</h4>
+                            <div class="product-item-price">
+                                
+                                <span class="product-item-price-current">140.000đ</span>
+                            </div>
+                            <div class="product-item-action">
+                                <div class="product-item-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product-item-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="product-item" href="productdetail19.html">
+                            <div class="product-item-img">
+                                <img src="./images/product/sp19/vertical-track.jpg" width="100%" height="100%" class="product-icon">
+                            </div>
+                            <h4 class="product-item-name">Vertical Track Pant</h4>
+                            <div class="product-item-price">
+                                
+                                <span class="product-item-price-current">140.000đ</span>
+                            </div>
+                            <div class="product-item-action">
+                                <div class="product-item-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product-item-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="product-item" href="productdetail20.html">
+                            <div class="product-item-img">
+                                <img src="./images/product/sp20/navy-track.jpg" width="100%" height="100%" class="product-icon">
+                            </div>
+                            <h4 class="product-item-name">Genuine Nerdy Pants</h4>
+                            <div class="product-item-price">
+                                
+                                <span class="product-item-price-current">140.000đ</span>
+                            </div>
+                            <div class="product-item-action">
+                                <div class="product-item-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product-item-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="product-item" href="productdetail15.html">
+                            <div class="product-item-img">
+                                <img src="./images/product/sp15/vay-yem-day-deo-co-the-thao-roi.jpg" width="100%" height="100%" class="product-icon">
+                            </div>
+                            <h4 class="product-item-name">Removable Camisole</h4>
+                            <div class="product-item-price">
+                                
+                                <span class="product-item-price-current">140.000đ</span>
+                            </div>
+                            <div class="product-item-action">
+                                <div class="product-item-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product-item-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__head">
+                <div class="footer__brand">
+                    <div class="footer__brand-1">
+                        <a href="red-kap.html" class="footer__brand-link">
+                            <img src="./images/brand/logo_redkap.png" alt="Red Kap" class="footer__brand-img">
+                        </a>
+                    </div>
+
+                    <div class="footer__brand-2">
+                        <a href="horace-small.html" class="footer__brand-link">
+                            <img src="./images/brand/horace-small-logo.png" alt="Hocare Small" class="footer__brand-img">
+                        </a>
+                    </div>
+
+                    <div class="footer__brand-3">
+                        <a href="gildan.html" class="footer__brand-link">
+                            <img src="./images/brand/logo_gildan.png" width="200px" height="100px" alt="Gildan" class="footer__brand-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-wrapper">
+                <div class="footer-layout">
+                    <div class="footer-row">
+                        <div class="footer-col-1">
+                            <h3>CONTACT INFOR</h3>
+                            <p><i class="fa-solid fa-house"></i>4010 Volta Ave</p>
+                            <p> Brentwood, MD 20722</p>
+                            <p><i class="fa-solid fa-phone"></i>Phone: 1-800-334-2205</p>
+                            <p><i class="fa-solid fa-fax"></i>Fax: 1-800-334-2205</p>
+                            <p><i class="fa-solid fa-envelope"></i>Email: A1uniformsshop888@gmail.com</p>
+                        </div>
+                        <div class="footer-col-2">
+                            <h3>CUSTOMER</h3>
+                            <a class="footer-link" href="signin.html">My Account</a>
+                            <a class="footer-link" href="signin.html">Order History</a>
+                            <a class="footer-link" href="terms-condition.html">Terms and Conditions</a>
+                            <a class="footer-link footer-link-bot" href="privacy-policy.html">Privacy Policy</a>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>COMPANY</h3>
+                            <a class="footer-link" href="About.html">About</a>
+                            <a class="footer-link footer-link-bot" href="Contact.html">Contact Us</a>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Email Sign Up</h3>
+                            <p>Please register email to receive the fastest goods information for you</p>
+                            <div class="footer-ip">
+                                <input type="text" class="footer-item" value size="40" placeholder="Your Email (required)">
+                            </div>
+                            <button class="footer-btn">Registration</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-layout-2">
+                    <div class="footer-container">
+                        <span class="footer-left">&copy;A1uniforms  2022</span>
+                        <span class="footer-right">Fashion shop - High fashion</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
